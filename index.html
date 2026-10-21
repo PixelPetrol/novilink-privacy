@@ -5,11 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Polityka prywatności — NoviCloud GO</title>
 <style>
-  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.6;color:#1a2233;background:#fff}
-  h1{font-size:24px} h2{font-size:18px;margin-top:28px} code{background:#f1f2f5;padding:1px 5px;border-radius:4px}
+  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:780px;margin:0 auto;padding:24px;line-height:1.6;color:#1a2233;background:#fff}
+  h1{font-size:25px} h2{font-size:18px;margin-top:32px} code{background:#f1f2f5;padding:1px 5px;border-radius:4px}
   .muted{color:#6b7280;font-size:14px}
   .box{background:#f6f8fc;border-radius:10px;padding:14px 18px;margin:18px 0}
   .box p{margin:8px 0}
+  .adres{background:#f6f8fc;border-radius:10px;padding:14px 18px;margin:14px 0;line-height:1.5}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+  th,td{border:1px solid #dde2ea;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f6f8fc}
+  hr{border:0;border-top:1px solid #e5e7eb;margin:28px 0}
 </style>
 </head>
 <body>
@@ -20,74 +25,139 @@
 (system Insoft/Novitus): przeglądanie raportów sprzedaży, towarów i dokumentów, skanowanie
 kodów oraz przygotowywanie plików magazynowych.</p>
 
-<h2>Kto jest administratorem</h2>
-<p>Wydawca aplikacji: <strong>Novitus</strong> — kontakt: <strong>next@novitus.pl</strong>.</p>
+<p>Dokument spełnia obowiązek informacyjny z <strong>art. 13 RODO</strong> (rozporządzenie
+Parlamentu Europejskiego i Rady (UE) 2016/679).</p>
 
-<h2>Najkrócej, jak się da</h2>
-<div class="box">
-<p>Aplikacja <strong>nie ma własnego serwera</strong>. Do wydawcy aplikacji
-<strong>nie trafia nic</strong>. Twoje dane idą wyłącznie do NoviCloud, czyli tam,
-gdzie i tak są.</p>
-<p>Poza NoviCloud urządzenie łączy się jeszcze z dwoma miejscami i nie wysyła im żadnych
-Twoich danych biznesowych ani osobowych: z <strong>Open Food Facts</strong>, gdy
-zeskanujesz nieznany kod kreskowy, oraz z <strong>serwerem czcionek Google</strong>, raz,
-przy pierwszym uruchomieniu. Szczegóły obu są niżej.</p>
+<hr>
+
+<h2>1. Kto jest administratorem danych</h2>
+<div class="adres">
+<strong>COMP Spółka Akcyjna</strong> z siedzibą w Warszawie<br>
+ul. Jutrzenki 116, 02-230 Warszawa<br>
+KRS 0000037706 · NIP 5220001694<br><br>
+Aplikację wydaje i rozwija oddział spółki:<br>
+<strong>Comp S.A. Oddział Nowy Sącz NOVITUS</strong>, ul. Nawojowska 118, 33-300 Nowy Sącz.
 </div>
+<p><strong>Kontakt w sprawie aplikacji i jej prywatności:</strong> next@novitus.pl</p>
+<p><strong>Inspektor ochrony danych:</strong> iod@comp.com.pl (korespondencyjnie:
+Comp S.A., Inspektor Ochrony Danych, ul. Jutrzenki 116, 02-230 Warszawa). Z inspektorem
+możesz skontaktować się we wszystkich sprawach dotyczących przetwarzania Twoich danych
+i wykonywania praw opisanych w punkcie 7.</p>
 
-<h2>Co przetwarzamy i gdzie</h2>
+<h2>2. Kto jest administratorem CZEGO — to rozróżnienie jest istotne</h2>
+<p>Aplikacja działa na danych pochodzących z Twojego konta NoviCloud i mieszczących się
+na Twoim urządzeniu. Wynikają z tego dwie różne role:</p>
 <ul>
-  <li><strong>Dane logowania do NoviCloud</strong> (nazwa bazy i hasło API) — przechowywane
-    na urządzeniu w bezpiecznym magazynie systemu (Android Keystore / iOS Keychain), używane
-    wyłącznie do połączenia z API NoviCloud, przesyłane wyłącznie tam.</li>
-  <li><strong>Dane biznesowe</strong> (towary, dokumenty, sprzedaż, stany magazynowe, a także
-    karty lojalnościowe klientów Twojego sklepu) — pobierane z NoviCloud i zapisywane lokalnie,
-    żeby aplikacja działała szybciej i bez internetu. Administratorem danych klientów Twojego
-    sklepu pozostajesz <strong>Ty</strong>; wydawca aplikacji nie ma do nich dostępu.
-    Na iPhonie i iPadzie ta lokalna kopia jest wyłączona z kopii zapasowej iCloud.</li>
-  <li><strong>Dane biometryczne</strong> (odcisk palca / Face ID) — obsługiwane wyłącznie
-    przez system operacyjny. Aplikacja ich nie widzi i nie przechowuje.</li>
-  <li><strong>Dziennik zdarzeń</strong> (diagnostyka) — plik zapisywany lokalnie,
-    z zamaskowaną nazwą bazy, bez haseł. Nigdzie nie wysyła się sam. Możesz go ręcznie
-    udostępnić pomocy technicznej z poziomu Ustawień — wtedy przechodzi przez anonimizację,
-    która maskuje nazwę bazy, adresy e-mail i ciągi dziewięciu lub więcej cyfr (telefony,
-    NIP-y, numery kart). <strong>Uwaga:</strong> komunikaty błędów zwrócone przez NoviCloud
-    bywają cytowane w całości, więc może się w nich znaleźć nazwa towaru, asortymentu albo
-    kontrahenta. Przed wysłaniem dziennika możesz go obejrzeć.</li>
+  <li><strong>Dane Twoich klientów</strong> (np. posiadacze kart lojalnościowych, dane
+    nabywców na fakturach) — <strong>administratorem jesteś Ty</strong>, jako przedsiębiorca
+    prowadzący sklep. COMP S.A. nie ma do tych danych dostępu: aplikacja nie przesyła ich
+    do wydawcy i nie korzysta z żadnego serwera pośredniczącego. Obowiązki informacyjne
+    wobec Twoich klientów spoczywają na Tobie.</li>
+  <li><strong>Dane dotyczące Ciebie jako użytkownika aplikacji</strong> (nazwa bazy
+    NoviCloud, hasło API, dziennik zdarzeń) — pozostają na Twoim urządzeniu.
+    Administratorem w rozumieniu RODO jest COMP S.A. w zakresie, w jakim dane te są
+    przetwarzane w związku z udostępnieniem Ci aplikacji; w praktyce spółka ich nie
+    otrzymuje i nie ma do nich dostępu.</li>
 </ul>
 
-<h2>Uprawnienia</h2>
+<h2>3. Najkrócej, jak się da</h2>
+<div class="box">
+<p>Aplikacja <strong>nie ma własnego serwera</strong> i <strong>nie korzysta z żadnych
+usług zewnętrznych</strong>. Łączy się wyłącznie z Twoim NoviCloud. Do wydawcy aplikacji
+nie trafia nic.</p>
+<p>Jedyne inne połączenia powstają wtedy, gdy <strong>sam</strong> stukniesz odnośnik —
+instrukcję obsługi, tę politykę, telefon do helpdesku albo formularz zgłoszenia problemu.
+Otwierają się w przeglądarce, dialerze lub kliencie poczty.</p>
+</div>
+
+<h2>4. Jakie dane i w jakim celu</h2>
+<table>
+  <tr><th>Dane</th><th>Cel</th><th>Podstawa prawna</th></tr>
+  <tr><td>Nazwa bazy NoviCloud i hasło API</td><td>zalogowanie do Twojego systemu i pobranie danych</td><td>art. 6 ust. 1 lit. b RODO — niezbędność do wykonania usługi, o którą prosisz</td></tr>
+  <tr><td>Dane biznesowe pobrane z NoviCloud (towary, dokumenty, sprzedaż, stany, karty lojalnościowe)</td><td>działanie aplikacji, także bez internetu</td><td>art. 6 ust. 1 lit. b RODO</td></tr>
+  <tr><td>Imię podane przy pierwszym uruchomieniu</td><td>wyłącznie personalizacja powitania na ekranie; zostaje na urządzeniu</td><td>art. 6 ust. 1 lit. a RODO — zgoda (pole dobrowolne, możesz je zostawić puste)</td></tr>
+  <tr><td>Dziennik zdarzeń (diagnostyka)</td><td>ustalenie przyczyny awarii, gdy sam zdecydujesz się go wysłać do wsparcia</td><td>art. 6 ust. 1 lit. f RODO — uzasadniony interes: zapewnienie poprawnego działania aplikacji</td></tr>
+</table>
+<p>Podanie nazwy bazy i hasła API jest <strong>dobrowolne</strong>, ale bez nich aplikacja
+nie ma z czym się połączyć i nie da się z niej korzystać.</p>
+
+<h2>5. Gdzie te dane się znajdują</h2>
+<ul>
+  <li><strong>Dane logowania</strong> — w bezpiecznym magazynie systemu operacyjnego
+    (Android Keystore / iOS Keychain), używane wyłącznie do połączenia z API NoviCloud,
+    przesyłane wyłącznie tam.</li>
+  <li><strong>Dane biznesowe</strong> — w lokalnej bazie na urządzeniu. Na iPhonie
+    i iPadzie ta kopia jest <strong>wyłączona z kopii zapasowej iCloud</strong>.</li>
+  <li><strong>Dane biometryczne</strong> (odcisk palca / Face ID) — obsługiwane wyłącznie
+    przez system operacyjny. Aplikacja ich nie widzi i nie przechowuje.</li>
+  <li><strong>Dziennik zdarzeń</strong> — plik na urządzeniu, z zamaskowaną nazwą bazy,
+    bez haseł. Nigdzie nie wysyła się sam. Gdy udostępnisz go ręcznie z Ustawień,
+    przechodzi przez anonimizację maskującą nazwę bazy, adresy e-mail i ciągi dziewięciu
+    lub więcej cyfr (telefony, NIP-y, numery kart). <strong>Uwaga:</strong> komunikaty
+    błędów zwrócone przez NoviCloud bywają cytowane w całości, więc może się w nich
+    znaleźć nazwa towaru, asortymentu albo kontrahenta. Przed wysłaniem dziennika możesz
+    go obejrzeć.</li>
+</ul>
+
+<h2>6. Jak długo przechowujemy dane</h2>
+<p>Aplikacja nie ma serwera, więc <strong>nie przechowujemy niczego po swojej
+stronie</strong>. Dane istnieją wyłącznie na Twoim urządzeniu i znikają, gdy:</p>
+<ul>
+  <li>wybierzesz <strong>„Rozłącz konto"</strong> w Ustawieniach — kasuje to wszystkie
+    pobrane dane, dane logowania i dziennik;</li>
+  <li><strong>odinstalujesz aplikację</strong> — usuwa to wszystko, co lokalne.</li>
+</ul>
+<p>Dziennik zdarzeń jest dodatkowo ograniczony rozmiarem i nadpisywany w miarę używania.
+Dane, które samodzielnie wyślesz do wsparcia (np. dziennik dołączony do zgłoszenia),
+przechowujemy przez czas potrzebny do obsługi zgłoszenia, nie dłużej niż
+<strong>12 miesięcy</strong> od jego zamknięcia.</p>
+
+<h2>7. Twoje prawa</h2>
+<p>Przysługuje Ci prawo do:</p>
+<ul>
+  <li><strong>dostępu</strong> do danych i otrzymania ich kopii (art. 15 RODO),</li>
+  <li><strong>sprostowania</strong> danych nieprawidłowych (art. 16),</li>
+  <li><strong>usunięcia</strong> danych (art. 17),</li>
+  <li><strong>ograniczenia przetwarzania</strong> (art. 18),</li>
+  <li><strong>przenoszenia</strong> danych (art. 20),</li>
+  <li><strong>sprzeciwu</strong> wobec przetwarzania opartego na uzasadnionym interesie (art. 21),</li>
+  <li><strong>cofnięcia zgody</strong> w każdej chwili, bez wpływu na zgodność z prawem
+    przetwarzania dokonanego przed cofnięciem (dotyczy imienia podanego przy pierwszym
+    uruchomieniu — wystarczy wyczyścić to pole).</li>
+</ul>
+<p>Część z tych praw wykonasz <strong>samodzielnie i natychmiast</strong>, bez kontaktu
+z nami: dane znajdują się na Twoim urządzeniu, a „Rozłącz konto" i odinstalowanie usuwają
+je trwale. W pozostałych sprawach pisz na <strong>next@novitus.pl</strong> lub do
+inspektora ochrony danych: <strong>iod@comp.com.pl</strong>.</p>
+<p><strong>Prawo skargi.</strong> Jeżeli uważasz, że przetwarzamy Twoje dane niezgodnie
+z prawem, możesz wnieść skargę do organu nadzorczego: <strong>Prezes Urzędu Ochrony
+Danych Osobowych</strong>, ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl.</p>
+
+<h2>8. Odbiorcy danych i przekazywanie poza EOG</h2>
+<p><strong>Nie udostępniamy Twoich danych żadnym odbiorcom.</strong> Jedynym serwerem,
+z którym aplikacja się łączy, jest <strong>NoviCloud</strong> — Twój własny system,
+z którym masz odrębną umowę; przetwarzanie po jego stronie regulują warunki i polityka
+tego dostawcy. Połączenie wyłącznie po HTTPS.</p>
+<p><strong>Dane nie są przekazywane poza Europejski Obszar Gospodarczy</strong> przez
+aplikację.</p>
+<p>Krój pisma, którym złożony jest interfejs, <strong>jedzie razem z aplikacją</strong> —
+nie jest pobierany z sieci przy uruchomieniu.</p>
+
+<h2>9. Uprawnienia systemowe</h2>
 <ul>
   <li><strong>Aparat</strong> — wyłącznie do skanowania kodów kreskowych towarów i opakowań
-    oraz kodów kart lojalnościowych. Obrazy z aparatu nie są zapisywane ani wysyłane. Numer
-    karty lojalnościowej nie jest wysyłany nigdzie poza NoviCloud.</li>
+    oraz kodów kart lojalnościowych. Obrazy z aparatu nie są zapisywane ani wysyłane.
+    Zeskanowany kod nie wychodzi nigdzie poza NoviCloud.</li>
   <li><strong>Dodawanie do biblioteki Zdjęć</strong> (iOS) — tylko wtedy, gdy sam wybierzesz
     „Zapisz obraz" dla wygenerowanej karty lojalnościowej. Aplikacja nie czyta Twoich zdjęć.</li>
   <li><strong>Powiadomienia</strong> — opcjonalne, lokalne (podsumowanie dnia, alerty).
     Nie ma serwera powiadomień; wszystko powstaje na urządzeniu.</li>
-  <li><strong>Internet</strong> — komunikacja z API NoviCloud, a poza tym dwa przypadki
-    opisane niżej.</li>
+  <li><strong>Internet</strong> — wyłącznie do komunikacji z API NoviCloud.</li>
 </ul>
 <p>Aplikacja <strong>nie prosi</strong> o lokalizację, kontakty, mikrofon ani dostęp do
 odczytu zdjęć.</p>
 
-<h2>Usługi zewnętrzne — pełna lista</h2>
-<p><strong>NoviCloud (Insoft/Novitus)</strong> — źródło i miejsce zapisu Twoich danych
-biznesowych. Przetwarzanie po stronie NoviCloud regulują warunki i polityka tego dostawcy.
-Połączenie wyłącznie po HTTPS.</p>
-<p><strong>Open Food Facts</strong> — przy zeskanowaniu kodu, którego nie ma w Twoim
-katalogu, aplikacja wysyła <strong>sam kod kreskowy (EAN)</strong> do publicznej, darmowej
-bazy produktów, żeby podpowiedzieć nazwę, skład czy alergeny. Nie wysyła przy tym nazwy
-bazy, danych logowania ani żadnych danych Twojego sklepu. Dane z Open Food Facts są
-udostępniane na licencji Open Database License (ODbL).</p>
-<p><strong>Serwer czcionek Google</strong> (<code>fonts.gstatic.com</code>) — przy pierwszym
-uruchomieniu aplikacja pobiera stamtąd krój pisma, którym jest złożony interfejs. To zwykłe
-pobranie pliku: wychodzi adres IP urządzenia i standardowe nagłówki przeglądania, nie
-wychodzą żadne Twoje dane. Dzieje się to raz; potem czcionka jest już na urządzeniu.</p>
-<p><strong>Odnośniki, które otwierasz sam</strong> — instrukcja obsługi, ta polityka, telefon
-do helpdesku i formularz zgłoszenia problemu otwierają się w przeglądarce, dialerze albo
-kliencie poczty. Dopóki ich nie stukniesz, nic się nie dzieje.</p>
-
-<h2>Czego aplikacja NIE robi</h2>
+<h2>10. Czego aplikacja NIE robi</h2>
 <ul>
   <li>Nie ma reklam, śledzenia ani narzędzi analitycznych. Nie zbiera identyfikatorów
     reklamowych i nie prosi o zgodę na śledzenie, bo nie ma czego śledzić.</li>
@@ -95,37 +165,31 @@ kliencie poczty. Dopóki ich nie stukniesz, nic się nie dzieje.</p>
     Podpowiedzi „Doradcy" (prognoza sprzedaży, alerty, sugestie zamówień, analiza ABC,
     „kupowane razem") liczy <strong>Twoje urządzenie</strong>, z danych pobranych z Twojego
     NoviCloud. Nic z nich nie opuszcza telefonu.</li>
-  <li>Nie przesyła danych do wydawcy aplikacji ani do żadnej firmy trzeciej poza
-    przypadkami wymienionymi wyżej.</li>
+  <li><strong>Nie podejmuje zautomatyzowanych decyzji wywołujących wobec Ciebie skutki
+    prawne ani podobnie istotne</strong> (art. 22 RODO). Podpowiedzi Doradcy są materiałem
+    pomocniczym — decyzje handlowe podejmujesz Ty.</li>
+  <li>Nie przesyła danych do wydawcy aplikacji ani do żadnej firmy trzeciej.</li>
 </ul>
 
 <div class="box">
 <p><strong>Zmiana w wersji 0.50.0 (21 października 2026).</strong> Wcześniejsze wydania
-miały opcjonalny czat z Google Gemini, uruchamiany własnym kluczem API użytkownika, oraz
-pobieranie prognozy pogody z Open-Meteo. <strong>Obie funkcje zostały usunięte
-w całości.</strong> Jeśli korzystałeś z czatu, Twój klucz API jest kasowany z urządzenia
-przy pierwszym uruchomieniu nowej wersji.</p>
+łączyły się jeszcze z trzema usługami: opcjonalnym czatem Google Gemini (na kluczu API
+użytkownika), prognozą pogody Open-Meteo oraz bazą produktów Open Food Facts, do której
+przy skanowaniu nieznanego kodu wychodził sam kod kreskowy. <strong>Wszystkie trzy zostały
+usunięte z aplikacji.</strong> Jeśli korzystałeś z czatu, Twój klucz API jest kasowany
+z urządzenia przy pierwszym uruchomieniu nowej wersji.</p>
 </div>
 
-<h2>Usuwanie danych</h2>
-<p>„Rozłącz konto" w Ustawieniach usuwa z urządzenia wszystkie pobrane dane, dane logowania
-i dziennik. Odinstalowanie aplikacji również usuwa wszystko, co lokalne. Aplikacja nie
-zakłada kont — konto NoviCloud zakłada i usuwa Twój dostawca systemu.</p>
-
-<h2>Zastrzeżenia</h2>
+<h2>11. Zastrzeżenia co do danych i wyliczeń</h2>
 <p>Dane i wyliczenia (raporty, prognozy, sugestie) mogą być niepełne lub nieprawidłowe —
 m.in. przy niedokończonej synchronizacji albo przy zmianach po stronie API NoviCloud.
 Przed ważną decyzją sprawdź liczby w NoviCloud. Decyzje biznesowe podejmujesz na własną
 odpowiedzialność.</p>
 
-<h2>Zmiany</h2>
-<p>Polityka może być aktualizowana. Aktualna wersja jest dostępna pod adresem podanym
-w aplikacji (Ustawienia → Polityka prywatności).</p>
-
-<h2>Kontakt</h2>
-<p>W sprawach prywatności i ochrony danych: <strong>next@novitus.pl</strong>.<br>
-Pomoc techniczna: aplikacja — <strong>next@novitus.pl</strong>; NoviCloud i kasy Next One —
-helpdesk <strong>22 113 95 69</strong>.</p>
+<h2>12. Zmiany polityki</h2>
+<p>Polityka może być aktualizowana. Aktualna wersja jest zawsze dostępna pod adresem
+podanym w aplikacji (Ustawienia → Polityka prywatności). Data ostatniej aktualizacji
+znajduje się na początku dokumentu.</p>
 
 </body>
 </html>
