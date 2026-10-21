@@ -10,7 +10,7 @@ BAZA = '/Users/piotrkorona/Desktop/pliki/codex claude pliki/novilink'
 MD = BAZA + '/PRIVACY.md'
 HTML = BAZA + '/privacy-site/index.html'
 
-NUMEROWANY = re.compile(r'^\*\*\d+\.\d+\.')
+NUMEROWANY = re.compile(r'^\*\*\d+(\.\d+)?\.\*\*')
 
 CSS = """  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:800px;margin:0 auto;padding:28px 24px 56px;line-height:1.65;color:#1a2233;background:#fff}
   h1{font-size:25px;line-height:1.3} h2{font-size:17px;margin-top:34px}
@@ -34,11 +34,12 @@ def inline(t):
 def main():
     md = open(MD).read()
     tytul = md.split('\n', 1)[0].lstrip('# ').strip()
-    data = re.search(r'^_(Wersja z dnia[^_]*)_', md, re.M)
-    data = data.group(1).strip() if data else ''
+    # Podtytuł: pierwszy akapit w kursywie tuż pod tytułem (podstawa prawna).
+    wstep = re.search(r'^_(.+?)_\n', md[len(tytul):], re.S | re.M)
+    wstep = ' '.join(wstep.group(1).split()) if wstep else ''
 
     body = md.split('\n', 1)[1]
-    body = re.sub(r'^_Wersja z dnia[^\n]*\n', '', body, flags=re.M)
+    body = re.sub(r'^_.+?_\n', '', body, flags=re.S | re.M, count=1)
 
     out, i = [], 0
     linie = body.split('\n')
@@ -100,7 +101,7 @@ def main():
               '<title>' + html.escape(tytul) + '</title>\n<style>\n'
               + CSS + '\n</style>\n</head>\n<body>\n'
               '<h1>' + html.escape(tytul) + '</h1>\n'
-              '<p class="muted">' + html.escape(data) + '</p>\n'
+              '<p class="muted">' + html.escape(wstep) + '</p>\n'
               + '\n'.join(out) + '\n\n</body>\n</html>\n')
     open(HTML, 'w').write(strona)
     print('sekcji:', strona.count('<h2>'), '· punktów:', strona.count('class="punkt"'),
