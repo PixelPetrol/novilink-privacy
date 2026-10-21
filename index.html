@@ -8,62 +8,124 @@
   body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.6;color:#1a2233;background:#fff}
   h1{font-size:24px} h2{font-size:18px;margin-top:28px} code{background:#f1f2f5;padding:1px 5px;border-radius:4px}
   .muted{color:#6b7280;font-size:14px}
+  .box{background:#f6f8fc;border-radius:10px;padding:14px 18px;margin:18px 0}
+  .box p{margin:8px 0}
 </style>
 </head>
 <body>
 <h1>Polityka prywatności — NoviCloud GO</h1>
-<p class="muted">Ostatnia aktualizacja: 24 lipca 2026</p>
+<p class="muted">Ostatnia aktualizacja: 21 października 2026</p>
 
-<p>NoviCloud GO to aplikacja mobilna ułatwiająca pracę z kontem <strong>NoviCloud</strong> (system Insoft/Novitus):
-przeglądanie raportów sprzedaży, towarów, dokumentów oraz przygotowywanie plików magazynowych.
-</p>
+<p>NoviCloud GO to aplikacja mobilna ułatwiająca pracę z kontem <strong>NoviCloud</strong>
+(system Insoft/Novitus): przeglądanie raportów sprzedaży, towarów i dokumentów, skanowanie
+kodów oraz przygotowywanie plików magazynowych.</p>
 
-<h2>Administrator</h2>
+<h2>Kto jest administratorem</h2>
 <p>Wydawca aplikacji: <strong>Novitus</strong> — kontakt: <strong>next@novitus.pl</strong>.</p>
 
-<h2>Jakie dane przetwarzamy i gdzie</h2>
-<p>NoviCloud GO <strong>nie ma własnego serwera</strong> i <strong>nie wysyła Twoich danych do wydawcy aplikacji</strong>.
-Wszystkie dane są przetwarzane wyłącznie na Twoim urządzeniu oraz w komunikacji bezpośrednio z serwerem NoviCloud, do którego się logujesz.</p>
+<h2>Najkrócej, jak się da</h2>
+<div class="box">
+<p>Aplikacja <strong>nie ma własnego serwera</strong>. Do wydawcy aplikacji
+<strong>nie trafia nic</strong>. Twoje dane idą wyłącznie do NoviCloud, czyli tam,
+gdzie i tak są.</p>
+<p>Poza NoviCloud urządzenie łączy się jeszcze z dwoma miejscami i nie wysyła im żadnych
+Twoich danych biznesowych ani osobowych: z <strong>Open Food Facts</strong>, gdy
+zeskanujesz nieznany kod kreskowy, oraz z <strong>serwerem czcionek Google</strong>, raz,
+przy pierwszym uruchomieniu. Szczegóły obu są niżej.</p>
+</div>
+
+<h2>Co przetwarzamy i gdzie</h2>
 <ul>
-  <li><strong>Dane logowania do NoviCloud</strong> (nazwa konta i hasło API) — przechowywane lokalnie w bezpiecznym magazynie systemu (Android Keystore / iOS Keychain), używane wyłącznie do połączenia z API NoviCloud.</li>
-  <li><strong>Dane biznesowe</strong> (towary, dokumenty, sprzedaż, stany, a także karty lojalnościowe klientów Twojego sklepu) — pobierane z NoviCloud i zapisywane lokalnie, aby aplikacja działała szybciej i offline. Administratorem danych klientów Twojego sklepu pozostajesz Ty; wydawca aplikacji nie ma do nich dostępu.</li>
-  <li><strong>Dane biometryczne</strong> (odcisk palca / Face ID) — obsługiwane wyłącznie przez system operacyjny; aplikacja nie ma do nich dostępu.</li>
-  <li><strong>Dziennik zdarzeń</strong> (diagnostyka) — plik zapisywany lokalnie, z maskowaną nazwą konta i bez haseł. Nigdzie nie jest wysyłany automatycznie — możesz go ręcznie udostępnić (np. do pomocy technicznej) z poziomu Ustawień.</li>
+  <li><strong>Dane logowania do NoviCloud</strong> (nazwa bazy i hasło API) — przechowywane
+    na urządzeniu w bezpiecznym magazynie systemu (Android Keystore / iOS Keychain), używane
+    wyłącznie do połączenia z API NoviCloud, przesyłane wyłącznie tam.</li>
+  <li><strong>Dane biznesowe</strong> (towary, dokumenty, sprzedaż, stany magazynowe, a także
+    karty lojalnościowe klientów Twojego sklepu) — pobierane z NoviCloud i zapisywane lokalnie,
+    żeby aplikacja działała szybciej i bez internetu. Administratorem danych klientów Twojego
+    sklepu pozostajesz <strong>Ty</strong>; wydawca aplikacji nie ma do nich dostępu.
+    Na iPhonie i iPadzie ta lokalna kopia jest wyłączona z kopii zapasowej iCloud.</li>
+  <li><strong>Dane biometryczne</strong> (odcisk palca / Face ID) — obsługiwane wyłącznie
+    przez system operacyjny. Aplikacja ich nie widzi i nie przechowuje.</li>
+  <li><strong>Dziennik zdarzeń</strong> (diagnostyka) — plik zapisywany lokalnie,
+    z zamaskowaną nazwą bazy, bez haseł. Nigdzie nie wysyła się sam. Możesz go ręcznie
+    udostępnić pomocy technicznej z poziomu Ustawień — wtedy przechodzi przez anonimizację,
+    która maskuje nazwę bazy, adresy e-mail i ciągi dziewięciu lub więcej cyfr (telefony,
+    NIP-y, numery kart). <strong>Uwaga:</strong> komunikaty błędów zwrócone przez NoviCloud
+    bywają cytowane w całości, więc może się w nich znaleźć nazwa towaru, asortymentu albo
+    kontrahenta. Przed wysłaniem dziennika możesz go obejrzeć.</li>
 </ul>
 
 <h2>Uprawnienia</h2>
 <ul>
-  <li><strong>Aparat</strong> — wyłącznie do skanowania kodów: towarów i opakowań oraz kodów kart lojalnościowych. Obrazy nie są zapisywane ani wysyłane. Numer karty lojalnościowej nie jest wysyłany do Open Food Facts ani do usług AI.</li>
-  <li><strong>Internet</strong> — komunikacja z API NoviCloud oraz (opcjonalnie) z bazą Open Food Facts.</li>
+  <li><strong>Aparat</strong> — wyłącznie do skanowania kodów kreskowych towarów i opakowań
+    oraz kodów kart lojalnościowych. Obrazy z aparatu nie są zapisywane ani wysyłane. Numer
+    karty lojalnościowej nie jest wysyłany nigdzie poza NoviCloud.</li>
+  <li><strong>Dodawanie do biblioteki Zdjęć</strong> (iOS) — tylko wtedy, gdy sam wybierzesz
+    „Zapisz obraz" dla wygenerowanej karty lojalnościowej. Aplikacja nie czyta Twoich zdjęć.</li>
+  <li><strong>Powiadomienia</strong> — opcjonalne, lokalne (podsumowanie dnia, alerty).
+    Nie ma serwera powiadomień; wszystko powstaje na urządzeniu.</li>
+  <li><strong>Internet</strong> — komunikacja z API NoviCloud, a poza tym dwa przypadki
+    opisane niżej.</li>
 </ul>
+<p>Aplikacja <strong>nie prosi</strong> o lokalizację, kontakty, mikrofon ani dostęp do
+odczytu zdjęć.</p>
 
-<h2>Usługi zewnętrzne</h2>
+<h2>Usługi zewnętrzne — pełna lista</h2>
+<p><strong>NoviCloud (Insoft/Novitus)</strong> — źródło i miejsce zapisu Twoich danych
+biznesowych. Przetwarzanie po stronie NoviCloud regulują warunki i polityka tego dostawcy.
+Połączenie wyłącznie po HTTPS.</p>
+<p><strong>Open Food Facts</strong> — przy zeskanowaniu kodu, którego nie ma w Twoim
+katalogu, aplikacja wysyła <strong>sam kod kreskowy (EAN)</strong> do publicznej, darmowej
+bazy produktów, żeby podpowiedzieć nazwę, skład czy alergeny. Nie wysyła przy tym nazwy
+bazy, danych logowania ani żadnych danych Twojego sklepu. Dane z Open Food Facts są
+udostępniane na licencji Open Database License (ODbL).</p>
+<p><strong>Serwer czcionek Google</strong> (<code>fonts.gstatic.com</code>) — przy pierwszym
+uruchomieniu aplikacja pobiera stamtąd krój pisma, którym jest złożony interfejs. To zwykłe
+pobranie pliku: wychodzi adres IP urządzenia i standardowe nagłówki przeglądania, nie
+wychodzą żadne Twoje dane. Dzieje się to raz; potem czcionka jest już na urządzeniu.</p>
+<p><strong>Odnośniki, które otwierasz sam</strong> — instrukcja obsługi, ta polityka, telefon
+do helpdesku i formularz zgłoszenia problemu otwierają się w przeglądarce, dialerze albo
+kliencie poczty. Dopóki ich nie stukniesz, nic się nie dzieje.</p>
+
+<h2>Czego aplikacja NIE robi</h2>
 <ul>
-  <li><strong>NoviCloud (Insoft/Novitus)</strong> — źródło i miejsce zapisu Twoich danych biznesowych.</li>
-  <li><strong>Open Food Facts</strong> — przy skanowaniu nieznanego kodu aplikacja może wysłać sam kod kreskowy (EAN), aby podpowiedzieć nazwę produktu. Nie są wysyłane dane osobowe ani dane konta.</li>
-  <li><strong>Open-Meteo</strong> — tylko przy włączonych „codziennych sugestiach" Doradcy AI: wysyłamy wyłącznie nazwę miejscowości wpisaną ręcznie w profilu firmy, aby pobrać prognozę pogody do porad. Aplikacja nie używa lokalizacji urządzenia (nie prosi o to uprawnienie).</li>
+  <li>Nie ma reklam, śledzenia ani narzędzi analitycznych. Nie zbiera identyfikatorów
+    reklamowych i nie prosi o zgodę na śledzenie, bo nie ma czego śledzić.</li>
+  <li><strong>Nie zawiera żadnych funkcji sztucznej inteligencji działających w chmurze.</strong>
+    Podpowiedzi „Doradcy" (prognoza sprzedaży, alerty, sugestie zamówień, analiza ABC,
+    „kupowane razem") liczy <strong>Twoje urządzenie</strong>, z danych pobranych z Twojego
+    NoviCloud. Nic z nich nie opuszcza telefonu.</li>
+  <li>Nie przesyła danych do wydawcy aplikacji ani do żadnej firmy trzeciej poza
+    przypadkami wymienionymi wyżej.</li>
 </ul>
 
-<h2>Doradca AI</h2>
-<p>Aplikacja zawiera „Doradcę AI" działającego dwutorowo:</p>
-<ul>
-  <li><strong>Wskazówki na urządzeniu</strong> (prognozy sprzedaży, sugestie zamówień, alerty, analiza ABC) — liczone <strong>wyłącznie lokalnie</strong>. Te dane nie opuszczają telefonu.</li>
-  <li><strong>Asystent w języku naturalnym (opcjonalny)</strong> — działa tylko po włączeniu i podaniu przez Ciebie własnego klucza API Google Gemini (BYOK). Klucz przechowujemy lokalnie w bezpiecznym magazynie. Do Google wysyłamy <strong>wyłącznie dane biznesowe</strong> (wartości sprzedaży, nazwy towarów, kategorie, stany) potrzebne do odpowiedzi — <strong>nigdy danych osobowych</strong> klientów, kontrahentów ani nazwisk kasjerów.</li>
-</ul>
-<p>Uwaga: na darmowym planie Google może wykorzystywać przesłane dane do ulepszania swoich modeli. Asystent jest domyślnie wyłączony; wyłączenie usuwa klucz z urządzenia. Opcjonalny profil firmy (branża, lokalizacja) służy tylko personalizacji porad i jest przechowywany lokalnie.</p>
-
-<h2>Analityka i reklamy</h2>
-<p>Aplikacja <strong>nie zawiera</strong> reklam ani śledzenia. Nie zbieramy identyfikatorów reklamowych.</p>
+<div class="box">
+<p><strong>Zmiana w wersji 0.50.0 (21 października 2026).</strong> Wcześniejsze wydania
+miały opcjonalny czat z Google Gemini, uruchamiany własnym kluczem API użytkownika, oraz
+pobieranie prognozy pogody z Open-Meteo. <strong>Obie funkcje zostały usunięte
+w całości.</strong> Jeśli korzystałeś z czatu, Twój klucz API jest kasowany z urządzenia
+przy pierwszym uruchomieniu nowej wersji.</p>
+</div>
 
 <h2>Usuwanie danych</h2>
-<p>Wylogowanie („Rozłącz konto") usuwa z urządzenia wszystkie pobrane dane i dane logowania. Odinstalowanie aplikacji również usuwa wszystkie dane lokalne.</p>
+<p>„Rozłącz konto" w Ustawieniach usuwa z urządzenia wszystkie pobrane dane, dane logowania
+i dziennik. Odinstalowanie aplikacji również usuwa wszystko, co lokalne. Aplikacja nie
+zakłada kont — konto NoviCloud zakłada i usuwa Twój dostawca systemu.</p>
 
 <h2>Zastrzeżenia</h2>
-<p>NoviCloud GO jest udostępniany w obecnej postaci, bez gwarancji poprawności działania ani przydatności do określonego celu. Dane i wyliczenia (raporty, prognozy, sugestie AI) mogą być niepełne lub nieprawidłowe (m.in. błędy, niepełna synchronizacja, ograniczenia lub zmiany API NoviCloud) — należy je weryfikować w NoviCloud. Decyzje biznesowe podejmujesz na własną odpowiedzialność. Funkcje AI są dobrowolne i włączane dopiero po wyrażeniu zgody na przetwarzanie danych biznesowych przez Google Gemini (bez danych osobowych).</p>
+<p>Dane i wyliczenia (raporty, prognozy, sugestie) mogą być niepełne lub nieprawidłowe —
+m.in. przy niedokończonej synchronizacji albo przy zmianach po stronie API NoviCloud.
+Przed ważną decyzją sprawdź liczby w NoviCloud. Decyzje biznesowe podejmujesz na własną
+odpowiedzialność.</p>
+
+<h2>Zmiany</h2>
+<p>Polityka może być aktualizowana. Aktualna wersja jest dostępna pod adresem podanym
+w aplikacji (Ustawienia → Polityka prywatności).</p>
 
 <h2>Kontakt</h2>
-<p>W sprawach prywatności i ochrony danych: <strong>next@novitus.pl</strong>.</p>
-<p>Pomoc techniczna: aplikacja — <strong>next@novitus.pl</strong>;
-NoviCloud i kasy Next One — helpdesk <strong>22 113 95 69</strong>.</p>
+<p>W sprawach prywatności i ochrony danych: <strong>next@novitus.pl</strong>.<br>
+Pomoc techniczna: aplikacja — <strong>next@novitus.pl</strong>; NoviCloud i kasy Next One —
+helpdesk <strong>22 113 95 69</strong>.</p>
+
 </body>
 </html>
